@@ -1,0 +1,24 @@
+[project]
+name = "defi-storage"
+description = "Decentralized file storage marketplace on Stacks blockchain"
+authors = ["Abdulrazak malik <hexchange001@gmail.com>"]
+telemetry = false
+cache_dir = "./.clarinet"
+
+[contracts.defi-storage]
+path = "contracts/DeFiStorage.clar"
+clarity_version = 2
+epoch = 2.4
+
+[repl]
+costs = true
+parser_version = 2
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false

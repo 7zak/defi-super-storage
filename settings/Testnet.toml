@@ -1,0 +1,12 @@
+[network]
+name = "testnet"
+node_rpc_address = "https://stacks-node-api.testnet.stacks.co"
+deployment_fee_rate = 10
+
+[accounts.deployer]
+# Replace with your actual testnet account details
+mnemonic = "YOUR_TESTNET_MNEMONIC_HERE"
+# Address: YOUR_TESTNET_ADDRESS_HERE
+
+[contracts.defi-storage]
+path = "contracts/DeFiStorage.clar"
